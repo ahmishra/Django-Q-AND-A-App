@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block state-new %}active{% endblock state-new %}
+{% block title %}Update Question '{{ object }}' - Stackabundant{% endblock title %}
+
+{% block content %}
+<br><br><br><br><br>
+<div class="container">
+	<h3>Update Question '{{ object }}'</h3>
+	<p>Make Sure Your Question Is Clear And States What You Want To Do.</p>
+	<hr><br>
+	<form method="POST">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value="Update" class="btn btn-lg btn-success">
+		<br><br>
+	</form>
+</div>
+{% endblock content %}

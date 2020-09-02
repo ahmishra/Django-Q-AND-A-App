@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block state-signup %}
+active
+{% endblock state-signup %}
+{% block title  %}Stackabundant - Signup Portal{% endblock title  %}
+
+{% block content %}
+
+<div class="card flat-card-soft">
+  <div class="card-body">
+  	<img src="{% static 'imgs/favicon.svg' %}" class="icon">
+  	<strong style="margin-left: 120px;">Stackabundant</strong><br><hr><br>
+    <h5 class="card-title">Signup To Continue!</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Signup and join the forum and enjoy!</h6><br>
+    <form method="POST">
+    	{% csrf_token %}
+    	{{ form.as_p }}
+    	<br><br><input type="submit" value='Signup' class="btn btn-outline-success">
+      <a href="{% url 'accounts:login' %}" style="margin-left: 130px; text-decoration: none;">Login Instead</a>
+    </form>
+  </div>
+</div><br>
+{% endblock content %}

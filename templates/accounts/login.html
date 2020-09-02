@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block state-login %}
+active
+{% endblock state-login %}
+{% block title  %}Stackabundant - Login Portal{% endblock title  %}
+
+{% block content %}
+
+<div class="card flat-card-soft">
+  <div class="card-body">
+  	<img src="{% static 'imgs/favicon.svg' %}" class="icon">
+  	<strong style="margin-left: 120px;">Stackabundant</strong><br><hr><br>
+    <h5 class="card-title">Log Back Into Your Account!</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Login Back In To Answer Questions and And Make Questions!</h6><br>
+    <form method="POST">
+    	{% csrf_token %}
+    	{{ form.as_p }}
+    	<br><br><input type="submit" value='Login' class="btn btn-outline-success">
+      <a href="{% url 'accounts:signup' %}" style="margin-left: 80px; text-decoration: none;">Not A Member? Signup</a>
+    </form>
+  </div>
+</div><br>
+{% endblock content %}

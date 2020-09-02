@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Stackabundant - The Place Where Questions Find There Answers
+{% endblock title %}
+{% block state-home %}active{% endblock state-home %}
+
+{% block content %}
+<br><br>
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img style="filter: brightness(0.5); height: 900px;" src="{% static 'imgs/questions.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Thousands Of Questions Answered</h5>
+        <p>There Are Thousands Of Questions On The Community That are already answers</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img style="filter: brightness(0.5); height: 900px;" src="{% static 'imgs/privacy.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Security & Privacy</h5>
+        <p>We Care About Your Security & Privacy Better Than Ever</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img style="filter: brightness(0.5); height: 900px;" src="{% static 'imgs/modern.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Modern & Sleek</h5>
+        <p>Presenting Modern, Soft, Sleek and Easy To Access UI</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="parllax" style="
+				background-image: url('{% static 'imgs/welcome.jpg' %}');
+  			min-height: 500px; 
+  			background-attachment: fixed;
+ 			 	background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;"></div><br><br>
+
+<div class="intro fade">
+	<h2 class="centered">Welcome To, Stackabundant!</h2><br>
+	<div class="container">
+		<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div><br><br>
+
+<div class="parllax" style="
+				background-image: url('{% static 'imgs/about_us.jpg' %}');
+  			min-height: 500px; 
+  			background-attachment: fixed;
+ 			 	background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;"></div><br><br>
+
+<div class="about us fade">
+	<h2 class="centered">About Us</h2><br>
+	<div class="container">
+		<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div><br><br>
+
+<div class="parllax" style="
+				background-image: url('{% static 'imgs/help.jpg' %}');
+  			min-height: 500px; 
+  			background-attachment: fixed;
+ 			 	background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;"></div><br><br>
+
+
+<div class="about us fade">
+	<h2 class="centered">Getting Help</h2><br>
+	<div class="container">
+		<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div><br><br>
+<hr><br>
+<h3 class="centered">Join The Community Now!</h3>
+<br>
+{% endblock content %}
